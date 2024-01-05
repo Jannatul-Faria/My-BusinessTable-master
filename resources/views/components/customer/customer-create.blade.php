@@ -29,43 +29,7 @@
     </div>
 </div>
 
-{{-- <script>
-    async function saveCustomer() {
-        const customerName = document.getElementById('customer-name').value
-        const customerEmail = document.getElementById('customer-email').value
-        const customerMobile = document.getElementById('customer-mobile').value
 
-        //simple front-end validation
-        if (!customerName || !customerEmail || !customerMobile) {
-            alert("All fileds are requeired");
-            return;
-        }
-        try {
-            showLoader();
-            closeModal('create-modal');
-
-            const response = await axios.post("/customers", {
-                name: customerName,
-                email: customerEmail,
-                mobile: customerMobile
-            });
-
-            if (response.status === 201) {
-                document.getElementById("customer-form").reset();
-                await getList(currentPage);
-            } else {
-                alert {
-                    "Request failed!"
-                };
-            }
-        } catch (error()) {
-            consol.error("error creating customer: ", error);
-            alert("An error occurred while saving the customer. ");
-        } finally {
-            hideLoader();
-        }
-    }
-</script> --}}
 <script>
     async function saveCustomer() {
         const customerName = document.getElementById('customer-name').value;
